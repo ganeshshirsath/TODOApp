@@ -1,182 +1,199 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/media.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>ToDoApp</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--Font Awesome CDN link-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 </head>
 <body>
-<section>
-    <div class="header">
-        <div class="col-6 float-left">
-            <h1 class="heading1">TODOApp</h1>
-            <span class="span-header">Manage your tasks</span>
-        </div>
-        <div class="col-6 float-left lang">
-            <div class="float-right">
-                <a href="#">English</a>
-                <span>|</span>
-                <a href="#">Spanish</a>
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <h1 class="heading1"><strong>TODOApp</strong></h1>
+                <h4 class="heading4">Manage your tasks</h4>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="lang">
+                    <a href="#">English</a>
+                    <span>|</span>
+                    <a href="#">Spanish</a>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<hr/>
-<section>
-    <div>
-        <div class="status">
-            <select>
-                <option value="">Statuses</option>
-                <option value="open">Open</option>
-                <option value="inprogress">Inprogress</option>
-                <option value="close">Close</option>
-                <option value="reopen">Reopen</option>
-            </select>
+    <hr/>
+    <div class="container" id="body">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-8">
+                <select class="form-control">
+                    <option value="">Statuses</option>
+                    <option value="open">Open</option>
+                    <option value="in-progress">In-Progress</option>
+                    <option value="close">Close</option>
+                    <option value="re-open">Re-Open</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-4">
+                <button type="button" class="btn btn-primary" id="addTaskBtn"><span class="glyphicon glyphicon-plus"></span> Add New Task</button>
+            </div>
         </div>
-        <div class="add-task">
-            <input type="button" class="button" value="+ Add New Task"/>
+        <hr />
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 task">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-8">
+                        <span class="h4">Title</span>
+                        <hr/>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-4">
+                        <button class="btn delete test" data-toggle="tooltip" data-placement="auto top" title="Delete Task!.."><span class="glyphicon glyphicon-trash"></span></button>
+                        <input class="test" type="checkbox" data-toggle="tooltip" data-placement="auto top" title="Mark as complete!.."/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                            Descriptions : value
+                            <br/>Status : value
+                            <br/>Start Date: value
+                            end Date: value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 task">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-8">
+                        <span class="h4">Title</span>
+                        <hr/>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-4">
+                        <button class="btn delete test" data-toggle="tooltip" data-placement="auto top" title="Delete Task!.."><span class="glyphicon glyphicon-trash"></span></button>
+                        <input class="test" type="checkbox" data-toggle="tooltip" data-placement="auto top" title="Mark as complete!.."/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                            Descriptions : value
+                            <br/>Status : value
+                            <br/>Start Date: value
+                            end Date: value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 task">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-8">
+                        <span class="h4">Title</span>
+                        <hr/>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-4">
+                        <button class="btn delete test" data-toggle="tooltip" data-placement="auto top" title="Delete Task!.."><span class="glyphicon glyphicon-trash"></span></button>
+                        <input class="test" type="checkbox" data-toggle="tooltip" data-placement="auto top" title="Mark as complete!.."/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                            Descriptions : value
+                            <br/>Status : value
+                            <br/>Start Date: value
+                            end Date: value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 task">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-8">
+                        <span class="h4">Title</span>
+                        <hr/>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-4">
+                        <button class="btn delete test" data-toggle="tooltip" data-placement="auto top" title="Delete Task!.."><span class="glyphicon glyphicon-trash"></span></button>
+                        <input class="test" type="checkbox" data-toggle="tooltip" data-placement="auto top" title="Mark as complete!.."/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                            Descriptions : value
+                            <br/>Status : value
+                            <br/>Start Date: value
+                            end Date: value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 task">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-8">
+                        <span class="h4">Title</span>
+                        <hr/>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-4">
+                        <button class="btn delete test" data-toggle="tooltip" data-placement="auto top" title="Delete Task!.."><span class="glyphicon glyphicon-trash"></span></button>
+                        <input class="test" type="checkbox" data-toggle="tooltip" data-placement="auto top" title="Mark as complete!.."/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                            Descriptions : value
+                            <br/>Status : value
+                            <br/>Start Date: value
+                            end Date: value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 task">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-8">
+                        <span class="h4">Title</span>
+                        <hr/>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-4">
+                        <button class="btn delete test" data-toggle="tooltip" data-placement="auto top" title="Delete Task!.."><span class="glyphicon glyphicon-trash"></span></button>
+                        <input class="test" type="checkbox" data-toggle="tooltip" data-placement="auto top" title="Mark as complete!.."/>box"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p>
+                            Descriptions : value
+                            <br/>Status : value
+                            <br/>Start Date: value
+                            end Date: value
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <hr  class="clear-left"/>
-    <div class="row">
-        <div class="col-3 task-details">
-            <div>
-                <span>Title</span>
-                <div class="task-operations">
-                    <input type="button" value="Delete" />
-                    <div class="wrapper" style="float:right;width:25px;">
-                        <input type="checkbox"/>
-                        <div class="tooltip">tooltip!</div>
-                    </div>
-                </div>
-                <hr/>
-            </div>
-            <div>
-                <p>
-                    Descriptions : value
-                    <br/>Status : value
-                    <br/>Start Date: value
-                    end Date: value
-                </p>
-            </div>
-        </div>
-        <div class="col-3 task-details">
-            <div>
-                <span>Title</span>
-                <div class="task-operations">
-                    <input type="button" value="Delete" />
-                    <div class="wrapper" style="float:right;width:25px;">
-                        <input type="checkbox" />
-                        <div class="tooltip">tooltip!</div>
-                    </div>
-                </div>
-                <hr/>
-            </div>
-            <div>
-                <p>
-                    Descriptions : value
-                    <br/>Status : value
-                    <br/>Start Date: value
-                    end Date: value
-                </p>
-            </div>
-        </div>
-        <div class="col-3 task-details">
-            <div>
-                <span>Title</span>
-                <div class="task-operations">
-                    <input type="button" value="Delete" />
-                    <div class="wrapper" style="float:right;width:25px;">
-                        <input type="checkbox" />
-                        <div class="tooltip">tooltip!</div>
-                    </div>
-                </div>
-                <hr/>
-            </div>
-            <div>
-                <p>
-                    Descriptions : value
-                    <br/>Status : value
-                    <br/>Start Date: value
-                    end Date: value
-                </p>
+    <hr/>
+    <div class="container text-right" id="footer">
+        <div class="row center">
+            <div class="col-md-12">
+                <h4>Powered by SemanticBits</h4>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-3 task-details ">
-            <div>
-                <span>Title</span>
-                <div class="task-operations">
-                    <input type="button" value="Delete" />
-                    <div class="wrapper" style="float:right;width:25px;">
-                        <input type="checkbox" />
-                        <div class="tooltip">tooltip!</div>
-                    </div>
-                </div>
-                <hr/>
-            </div>
-            <div>
-                <p>
-                    Descriptions : value
-                    <br/>Status : value
-                    <br/>Start Date: value
-                    end Date: value
-                </p>
-            </div>
-        </div>
-        <div class="col-3 task-details">
-            <div>
-                <span>Title</span>
-                <div class="task-operations">
-                    <input type="button" value="Delete" />
-                    <div class="wrapper" style="float:right;width:25px;">
-                        <input type="checkbox" />
-                        <div class="tooltip">tooltip!</div>
-                    </div>
-                </div>
-                <hr/>
-            </div>
-            <div>
-                <p>
-                    Descriptions : value
-                    <br/>Status : value
-                    <br/>Start Date: value
-                    end Date: value
-                </p>
-            </div>
-        </div>
-        <div class="col-3 task-details">
-            <div>
-                <span>Title</span>
-                <div class="task-operations">
-                    <input type="button" value="Delete" />
-                    <div class="wrapper" style="float:right;width:25px;">
-                        <input type="checkbox" />
-                        <div class="tooltip">tooltip!</div>
-                    </div>
-                </div>
-                <hr/>
-            </div>
-            <div>
-                <p>
-                    Descriptions : value
-                    <br/>Status : value
-                    <br/>Start Date: value
-                    end Date: value
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<hr class="clear-left"/>
-<section>
-    <div class="footer" id="footer-section">
-        <span>Powered by SemanticBits</span>
-    </div>
-</section>
-
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>

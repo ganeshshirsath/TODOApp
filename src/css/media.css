@@ -1,225 +1,129 @@
-@media screen and (max-width: 360px){
-    .header {
-        background-color: #ffffff;
-        color: black;
-        height: 150px;
-        padding: 1%;
-        margin-top: 7%;
-        margin-right: 1%;
-        margin-left: 1%;
+@media screen and (min-width: 300px) and (max-width:320px){
+    .task {
+        max-width: 285px;
+        margin: 2% 5%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 350px) and (max-width:360px){
+    .task {
+        margin: 2% 7.5%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 370px) and (max-width:375px){
+    .task {
+        margin: 2% 9%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 405px) and (max-width:435px){
+    .task {
+        margin: 2% 12%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 430px) and (max-width:435px){
+    .task {
+        margin: 2% 16%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 475px) and (max-width:480px){
+    .task {
+        margin: 2% 18%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 595px) and (max-width:600px){
+    .task {
+        margin: 2% 24%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 635px) and (max-width:640px){
+    .task {
+        margin: 2% 1.2%;
+    }
+    #header > div > div > div.lang {
+        display: none;
+    }
+    #footer > div.center {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 765px) and (max-width:770px){
+    .task {
+        margin: 2% 8%;
+    }
+}
+@media screen and (min-width: 795px) and (max-width:800px){
+    .task {
+        margin: 2% 8%;
+    }
+}
+@media screen and (min-width: 900px) and (max-width:980px){
+    .task {
+        margin: 2% 8%;
+    }
+}
+@media screen and (min-width: 1020px) and (max-width:1025px){
+    .task {
+        margin: 2% 1.2%;
     }
     .heading1 {
-        font-size: 250%;
-        margin-top: 4%;
-        margin-bottom: 0;
+        font-size:80px
     }
-    .span-header {
-        font-size:90%;
-        width: 150px;
-        margin-left: 0;
-    }
-    div > select {
-        height: 28px;
-        width: 150px;
-        background: transparent;
-        border: 1px inset black;
-        border-radius: 10px;
-    }
-    .add-task {
-        float: right;
-        margin-right: 2%;
-        margin-top: 0;
-    }
-    section > hr {
-        margin-top: 1%;
-    }
-    section > div > div.col-3 {
-        margin: 4% 10%;
-    }
-    #footer-section {
-        font-size: 100%;
-        text-align: center;
-    }
-    .button {
-        height: 35px;
-    }
-    .lang {
-        display: none;
+    .heading4 {
+        margin-left:16%;
+        font-size:220%
     }
 }
-@media screen and (min-width: 320px) and (max-width:349px){
-    section > div > div.col-3 {
-        margin: 3% 5%;
-    }
-    #footer-section {
-        font-size: 100%;
-        text-align: center;
-    }
-    .lang {
-        display: none;
-    }
-    .button {
-        height: 35px;
-    }
-}
-@media screen and (min-width: 350px) and (max-width:359px){
+@media screen and (min-width: 1026px) and (max-width:2000px){
     .heading1 {
-        font-size: 300%;
-        margin-top: 10%;
+        font-size:80px
     }
-    .span-header {
-        margin-left: 3%;
+    .heading4 {
+        margin-left:16%;
+        font-size:220%
     }
-    div > select {
-        width: 150px;
-    }
-    section > div > div.col-3 {
-        margin: 3% 12%;
-    }
-    #footer-section {
-        font-size: 150%;
-        text-align: center;
-    }
-    .lang {
-        display: none;
-    }
-    .add-task {
-        float: right;
-        margin-right: 4%;
-        margin-top: 0.8%;
-    }
-    .button {
-        height: 35px;
+    #footer > div > div > h4 {
+        font-size:200%
     }
 }
-@media screen and (min-width: 370px) and (max-width:380px){
-    .heading1 {
-        font-size: 300%;
-        margin-top: 10%;
-    }
-    .span-header {
-        margin-left: 3%;
-    }
-    div > select {
-        width: 150px;
-    }
-    section > div > div.col-3 {
-        margin: 3% 12%;
-    }
-    #footer-section {
-        font-size: 150%;
-        text-align: center;
-    }
-    .lang {
-        display: none;
-    }
-    .add-task {
-        float: right;
-        margin-right: 4%;
-        margin-top: 0.8%;
-    }
-    .button {
-        height: 35px;
-    }
-}
-@media screen and (min-width: 400px) and (max-width:450px){
-    .span-header {
-        font-size: 131%;
-        margin-left: 6%;
-    }
-    div > select {
-        width: 150px;
-    }
-    .add-task {
-        float: right;
-        margin-right: 4%;
-        margin-top: 0.8%;
-    }
-    .button {
-        height: 35px;
-    }
-    section > div > div.col-3 {
-        margin: 3% 16%;
-    }
-    #footer-section {
-        font-size: 150%;
-        text-align: center;
-    }
-    .lang {
-        display: none;
-    }
-}
-@media screen and (min-width: 480px) and (max-width:500px){
-    .span-header {
-        font-size: 131%;
-        margin-left: 3%;
-    }
-    section > div > div.col-3 {
-        margin: 3% 20%;
-    }
-    div > select {
-        width: 150px;
-    }
-    .add-task {
-        margin-top: 1%;
-    }
-}
-@media screen and (min-width: 560px) and (max-width:589px){
-    section > div > div.col-3 {
-        margin: 3% 25%;
-    }
-    .add-task {
-        margin-top: 1%;
-    }
-}
-@media screen and (min-width: 590px) and (max-width:600px){
-    section > div > div.col-3 {
-        margin: 2% 1%;
-    }
-}
-@media screen and (min-width: 640px) and (max-width:664px){
-    section > div > div.col-3 {
-        margin: 2% 2.6%;
-    }
-}
-@media screen and (min-width: 665px) and (max-width:699px){
-    section > div > div.col-3 {
-        margin: 2% 3.5%;
-    }
-}
-@media screen and (min-width: 730px) and (max-width:749px){
 
-    section > div > div.col-3 {
-        margin: 2% 3.9%;
-    }
-}
-@media screen and (min-width: 750px) and (max-width:799px){
-    section > div > div.col-3 {
-        margin: 2% 6%;
-    }
-}
-@media screen and (min-width: 800px) and (max-width:829px){
-    section > div > div.col-3 {
-        margin: 2% 7%;
-    }
-}
-@media screen and (min-width: 880px) and (max-width:900px){
-    section > div > div.col-3 {
-        margin: 2% 0.5%;
-    }
-}
-@media screen and (min-width: 950px) and (max-width:999px){
-    section > div > div.col-3 {
-        margin: 2% 1.8%;
-    }
-}
-@media screen and (min-width: 1000px) and (max-width:1099px){
-    section > div > div.col-3 {
-        margin: 2% 2.2%;
-    }
-}
-@media screen and (min-width: 1100px) and (max-width:1279px){
-    section > div > div.col-3 {
-        margin: 2% 2.8%;
-    }
-}
